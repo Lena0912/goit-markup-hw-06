@@ -381,10 +381,8 @@
       </div>
       <form class="footer-email-form">
       <p class="footer-subscribe-text">Subscribe</p>
-      <span class="footer-email-form-parts">
-      <label class="footer-email-form-field" for="email">        
-        <input type="email" name="user_email" id="email" class="footer-email-input" placeholder="E-mail">
-      </label>      
+      <span class="footer-email-form-parts">      
+        <input type="email" name="user_email" id="email" class="footer-email-input" placeholder="E-mail">          
       <button type="submit" class="footer-subscribe-btn"><span class="footer-btn-title">Subscribe</span> <span class="footer-btn-icon"><svg class="icons" width="24" height="24">
         <use href="./images/icons.svg#icon-plane"></use>
       </svg></span></button>
@@ -394,7 +392,7 @@
     
     </footer>
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-modal-btn-icon" width="8" height="8">
@@ -439,9 +437,9 @@
             <textarea name="user_massage" class="modal-form-message" placeholder="Text input"></textarea>
           </label>
           <label>
-            <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check"></label>
+            <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden"></label>
             <label for="user-policy" class="modal-form-check-descr">
-              I accept the terms and conditions of the&nbsp; <a href="">Privacy Policy</a> 
+              I accept the terms and conditions of the&nbsp; <a class="modal-form-check-link" href="">Privacy Policy</a> 
             </label>
             <button type="submit" class="modal-form-submit">Send</button>
         </form>
